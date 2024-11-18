@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>にじょう</title>
+</head>
+<body>
+    <p><%= num %>の2乗は</p>
+    <p><%= ans %></p>
+    <p>です！</p>
+    <hr>
+    <form action="/squar">
+        <input type="number" name="num" required>
+        <label for="num">次に2乗したい整数を入れてね♪</label>
+        <input type="submit" values="送信">
+    </form>   
+</body>
+</html>

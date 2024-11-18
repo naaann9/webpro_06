@@ -75,4 +75,34 @@ app.get("/janken", (req, res) => {
   res.render( 'janken', display );
 });
 
+app.get("/squar", (req, res) => {
+  let num = req.query.num;
+  let ans = num * num;
+  const display = {
+    num: num,
+    ans: ans,
+  }
+  res.render('squar', display)
+});
+
+app.get("/color", (req, res) => {
+  let ans = '';
+  if (req.query.red){
+    ans = '赤が好きなあなたは「何事にも積極的な熱いハートの持ち主」です。';
+  }
+  if (req.query.blue){
+    ans = '青が好きなあなたは「周りへの配慮が上手な思慮深い人」です。';
+  }
+  if (req.query.purple){
+    ans = '紫が好きなあなたは「直感を信じるクリエイタータイプ」です。';
+  }
+  if (req.query.green){
+    ans = '緑色が好きなあなたは「平和を願う平等主義の持ち主」です。';
+  }
+  const display = {
+    ans: ans,
+  }
+  res.render('color', display)
+});
+
 app.listen(8080, () => console.log("Example app listening on port 8080!"));

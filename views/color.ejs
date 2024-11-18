@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>性格診断</title>
+</head>
+<body>
+    <p>好きな色は？</p>
+    <form action = "/color", method = "get">
+        <input type = "radio" name = "red">
+        <label for = "red">赤</label><br>
+        <input type = "radio" name = "blue">
+        <label for = "blue">青</label><br>
+        <input type = "radio" name = "purple">
+        <label for = "purple">紫</label><br>
+        <input type = "radio" name = "green">
+        <label for = "green">緑</label><br>
+        <input type = "submit" value = "診断する">
+    </form>
+    <hr>
+    <p><%= ans %></p>
+</body>
+</html>
