@@ -229,7 +229,7 @@ flowchart TD;
 start["開始"]
 one["入力された値から色を判別"]
 two["色に応じた文章をans に代入"]
-three["ans を表示]
+three["ans を表示"]
 end1["終了"]
 
 start --> one
